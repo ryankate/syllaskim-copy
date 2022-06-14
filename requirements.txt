@@ -2,5 +2,3 @@ datetime
 docx
 ics
 pandas
-tkinter
-turtle

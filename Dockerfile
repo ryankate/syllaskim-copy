@@ -1,6 +1,6 @@
 # use an official Python runtime as a parent image
 # I'm using this one cuz it's what I have on my computer
-FROM python 3.10.0
+FROM python:git 3.10.0
 
 # set the working directory in the container to /app
 WORKDIR /app
