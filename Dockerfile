@@ -6,7 +6,10 @@ FROM python 3.10.0
 WORKDIR /app
 
 # add files from my git repo to the container's /app directory
-ADD https://github.com/ryankate/syllaskim /app
+#ADD https://github.com/ryankate/syllaskim/archive/refs/heads/main.zip /app
+
+#copy files from current directory to the container's /app directory
+COPY . /app
 
 # install any packages from requirements.txt
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
